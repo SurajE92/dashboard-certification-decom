@@ -1,12 +1,3 @@
-# dashboard-certification-decom
-
-![Status](https://img.shields.io/badge/status-decom-red)  <!-- Decom Badge -->
-
-
-| Capability/Feature name | Jira | Queries & Mutations | Dev/ Deployment Status | Testing Status | Scalable | Secure | Operationally Ready | Backends |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-|   Cap2  |   CDB-345  |   Query1, Query2  |   Deployed  |   Stalled  |   No  |   No  |   No  |   Tier 2 iPaaS  |
-
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
