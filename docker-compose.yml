@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  apcmtrx_db:
+    image: "mysql:8.0.35"
+    container_name: apcmtrx_db
+    restart: unless-stopped
+    ports:
+      - "3316:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "Dy^pxn_cm^"
+      MYSQL_DATABASE: "apcmtrx_db"
+      MYSQL_USER: "apcmtrx_admin"
+      MYSQL_PASSWORD: "Dy^pxn_cm^"
+    volumes:
+      - ./etc/init.sql:/docker-entrypoint-initdb.d/10.sql
+      - ./db_data:/var/lib/mysql
+
+  phpmyadmin:
+    platform: linux/x86_64
+    image: phpmyadmin/phpmyadmin
+    container_name: "apcmtrx_db_phpmyadmin"
+    links:
+      - apcmtrx_db
+    environment:
+      PMA_HOST: apcmtrx_db
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 3000000000
+    ports:
+      - "4500:80"
+
+volumes:
+  db_data:
