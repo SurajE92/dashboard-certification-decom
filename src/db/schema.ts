@@ -1,4 +1,11 @@
-import { mysqlTable, varchar, int, boolean } from "drizzle-orm/mysql-core";
+import {
+  mysqlTableCreator,
+  varchar,
+  int,
+  boolean,
+} from "drizzle-orm/mysql-core";
+
+const mysqlTable = mysqlTableCreator((name) => `apcmtrx_${name}`);
 
 export const projectSchema = mysqlTable("projects", {
   id: int().primaryKey().autoincrement(),

@@ -1,11 +1,11 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "b729b436-c65e-4f7e-9299-9edf3185b1c2",
+  "id": "d33140ac-93ec-4403-9584-88d7e32c9568",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
-    "devCompletion": {
-      "name": "devCompletion",
+    "apcmtrx_devCompletion": {
+      "name": "apcmtrx_devCompletion",
       "columns": {
         "projectId": {
           "name": "projectId",
@@ -73,10 +73,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "devCompletion_projectId_projects_id_fk": {
-          "name": "devCompletion_projectId_projects_id_fk",
-          "tableFrom": "devCompletion",
-          "tableTo": "projects",
+        "apcmtrx_devCompletion_projectId_apcmtrx_projects_id_fk": {
+          "name": "apcmtrx_devCompletion_projectId_apcmtrx_projects_id_fk",
+          "tableFrom": "apcmtrx_devCompletion",
+          "tableTo": "apcmtrx_projects",
           "columnsFrom": [
             "projectId"
           ],
@@ -88,8 +88,8 @@
         }
       },
       "compositePrimaryKeys": {
-        "devCompletion_projectId": {
-          "name": "devCompletion_projectId",
+        "apcmtrx_devCompletion_projectId": {
+          "name": "apcmtrx_devCompletion_projectId",
           "columns": [
             "projectId"
           ]
@@ -98,8 +98,8 @@
       "uniqueConstraints": {},
       "checkConstraint": {}
     },
-    "operationallyReady": {
-      "name": "operationallyReady",
+    "apcmtrx_operationallyReady": {
+      "name": "apcmtrx_operationallyReady",
       "columns": {
         "projectId": {
           "name": "projectId",
@@ -143,10 +143,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "operationallyReady_projectId_projects_id_fk": {
-          "name": "operationallyReady_projectId_projects_id_fk",
-          "tableFrom": "operationallyReady",
-          "tableTo": "projects",
+        "apcmtrx_operationallyReady_projectId_apcmtrx_projects_id_fk": {
+          "name": "apcmtrx_operationallyReady_projectId_apcmtrx_projects_id_fk",
+          "tableFrom": "apcmtrx_operationallyReady",
+          "tableTo": "apcmtrx_projects",
           "columnsFrom": [
             "projectId"
           ],
@@ -158,8 +158,8 @@
         }
       },
       "compositePrimaryKeys": {
-        "operationallyReady_projectId": {
-          "name": "operationallyReady_projectId",
+        "apcmtrx_operationallyReady_projectId": {
+          "name": "apcmtrx_operationallyReady_projectId",
           "columns": [
             "projectId"
           ]
@@ -168,8 +168,8 @@
       "uniqueConstraints": {},
       "checkConstraint": {}
     },
-    "projects": {
-      "name": "projects",
+    "apcmtrx_projects": {
+      "name": "apcmtrx_projects",
       "columns": {
         "id": {
           "name": "id",
@@ -196,16 +196,16 @@
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {
-        "projects_id": {
-          "name": "projects_id",
+        "apcmtrx_projects_id": {
+          "name": "apcmtrx_projects_id",
           "columns": [
             "id"
           ]
         }
       },
       "uniqueConstraints": {
-        "projects_name_unique": {
-          "name": "projects_name_unique",
+        "apcmtrx_projects_name_unique": {
+          "name": "apcmtrx_projects_name_unique",
           "columns": [
             "name"
           ]
@@ -213,8 +213,8 @@
       },
       "checkConstraint": {}
     },
-    "securityCompletion": {
-      "name": "securityCompletion",
+    "apcmtrx_securityCompletion": {
+      "name": "apcmtrx_securityCompletion",
       "columns": {
         "projectId": {
           "name": "projectId",
@@ -282,10 +282,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "securityCompletion_projectId_projects_id_fk": {
-          "name": "securityCompletion_projectId_projects_id_fk",
-          "tableFrom": "securityCompletion",
-          "tableTo": "projects",
+        "apcmtrx_securityCompletion_projectId_apcmtrx_projects_id_fk": {
+          "name": "apcmtrx_securityCompletion_projectId_apcmtrx_projects_id_fk",
+          "tableFrom": "apcmtrx_securityCompletion",
+          "tableTo": "apcmtrx_projects",
           "columnsFrom": [
             "projectId"
           ],
@@ -297,8 +297,8 @@
         }
       },
       "compositePrimaryKeys": {
-        "securityCompletion_projectId": {
-          "name": "securityCompletion_projectId",
+        "apcmtrx_securityCompletion_projectId": {
+          "name": "apcmtrx_securityCompletion_projectId",
           "columns": [
             "projectId"
           ]
@@ -307,8 +307,8 @@
       "uniqueConstraints": {},
       "checkConstraint": {}
     },
-    "testCompletion": {
-      "name": "testCompletion",
+    "apcmtrx_testCompletion": {
+      "name": "apcmtrx_testCompletion",
       "columns": {
         "projectId": {
           "name": "projectId",
@@ -375,10 +375,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "testCompletion_projectId_projects_id_fk": {
-          "name": "testCompletion_projectId_projects_id_fk",
-          "tableFrom": "testCompletion",
-          "tableTo": "projects",
+        "apcmtrx_testCompletion_projectId_apcmtrx_projects_id_fk": {
+          "name": "apcmtrx_testCompletion_projectId_apcmtrx_projects_id_fk",
+          "tableFrom": "apcmtrx_testCompletion",
+          "tableTo": "apcmtrx_projects",
           "columnsFrom": [
             "projectId"
           ],
@@ -390,8 +390,8 @@
         }
       },
       "compositePrimaryKeys": {
-        "testCompletion_projectId": {
-          "name": "testCompletion_projectId",
+        "apcmtrx_testCompletion_projectId": {
+          "name": "apcmtrx_testCompletion_projectId",
           "columns": [
             "projectId"
           ]
